@@ -9,14 +9,14 @@ const T = new Twit({
   timeout_ms:           60*1000,  // optional HTTP request timeout to apply to all requests. 
 })
  
-//Test loop
+/*/Test loop
 for (i=0; i<20; i++){
 console.log(robobento.getHeadline());
 console.log(" ");
 
 }
+*/
 
-/*
 
 function tweet() { 
 T.post('statuses/update', { status: robobento.getHeadline() }, function(err, data, response) {
@@ -28,5 +28,4 @@ console.log("Tweeted: " + data.text)
 
 
 tweet();
-setInterval(tweet, 36000);
-*/
+setInterval(tweet, 3600000);
